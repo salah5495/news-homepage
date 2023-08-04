@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Sofia", sans-serif;
+    background-color: hsl(36, 100%, 99%);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .container{
+    width: 100%;
+    height: 90vh;
+    margin: 0 10%;
+  }
+  .container img{
+    width: 20px;
+    margin-top: 20px;
+  }
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    
+}
+.nav a{
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 15px;
+}
+.grid-container{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3,fr);
+    grid-template-rows: repeat(3,25%);
+    grid-template-areas: "one one two" 
+                         "three four two" 
+                         "five six seven";
+}
+.img-grid{
+    grid-area: one;
+    
+}
+.img-grid img{
+    width: 100%;
+    height: 100%;
+}
+.new-grid{
+    background-color: hsl(240, 100%, 5%);
+    grid-area: two;
+    color: #fff;
+    padding: 20px;
+ 
+}
+.new-grid h2{
+font-size: 16px;
+}
+.new-grid h1{
+    color: hsl(35, 77%, 62%);
+
+}
+.new-grid hr{
+    margin: 20px 0 20px 0;
+}
+.new-grid p{
+    font-size: 15px;
+}
+.web-3{
+    grid-area: three;
+}
+.web-info{
+    color: hsl(233, 8%, 79%);
+    font-size: 15px;
+    grid-area: four;
+}
+.web-info button{
+    background-color: hsl(5, 85%, 63%);
+    color: #fff;
+    border: none;
+    width: 150px;
+    height: 40px;
+    margin-top: 15px;
+}
+.products-Pc{
+    grid-area: five;
+    display: flex;
+    justify-content: space-between;
+}
+.products-Pc h3{
+    color: hsl(233, 8%, 79%);
+}
+.products-Pc p{
+    font-size: 15px;
+    color: hsl(233, 8%, 79%);
+}
+.products-laptop{
+    grid-area: six;
+    display: flex;
+    justify-content: space-between;
+}
+.products-laptop h3{
+    color: hsl(233, 8%, 79%);
+}
+.products-laptop p{
+    font-size: 15px;
+    color: hsl(233, 8%, 79%);
+}
+.products-gaming{
+    grid-area: seven;
+    display: flex;
+    justify-content: space-between;
+}
+.products-gaming h3{
+    color: hsl(233, 8%, 79%);
+}
+.products-gaming p{
+    font-size: 15px;
+    color: hsl(233, 8%, 79%);
+}
